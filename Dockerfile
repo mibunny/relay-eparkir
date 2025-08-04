@@ -1,10 +1,10 @@
 FROM php:8.2-apache
 
-# Install PDO MySQL
+# Install driver MySQL
 RUN docker-php-ext-install pdo pdo_mysql
 
-# Copy project files
+# Salin semua file ke container
 COPY . /var/www/html/
 
-# Enable mod_rewrite (opsional jika pakai .htaccess)
+# Aktifkan mod_rewrite jika pakai .htaccess
 RUN a2enmod rewrite
