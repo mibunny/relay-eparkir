@@ -1,2 +1,4 @@
-php_extensions:
-  - pdo_mysql
+app:
+  root: .
+  env:
+    APP_ENV: production
